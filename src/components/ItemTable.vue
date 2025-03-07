@@ -316,7 +316,6 @@ onMounted(() => {
             <button
               type="button"
               class="btn btn-outline-danger"
-              style="float: left"
               data-bs-dismiss="modal"
               @click="deleteItem"
             >
@@ -334,6 +333,7 @@ onMounted(() => {
                 />
               </svg>
             </button>
+            <span></span>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             <button
               type="submit"
@@ -431,3 +431,9 @@ onMounted(() => {
     </div>
   </div>
 </template>
+
+<style scoped>
+.modal-footer > span{
+  flex-grow:1; 
+}
+</style>
